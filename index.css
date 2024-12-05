@@ -1,42 +1,20 @@
-body {
-    font-family: 'Times New Roman', Times, serif;
-    background-color: red;
-  }
-  
-  h2 {
-    margin: 20px;
-    color: darkred;
-    font-size: 24px;
-    font-family: 'Comic Sans MS', 'Comic Sans', cursive;
-  }
-  
-  h4 {
-    font-family: 'Comic Sans MS', 'Comic Sans', cursive;
-  }
-  
-  .calendar-container {
-    display: grid;
-    grid-template-columns: repeat(5, 1fr); 
-    gap: 2px;
-    padding: 10px;
-    max-width: 800px;
-    margin: 0 auto;
-    background-color: tomato;
-    border-radius: 20px;
-  }
-  
-  .calendar-box {
+.calendar-box {
     background-color: #ff0000;
-    color: #ff9999;
-    font-size: 8px;
-    text-align: left;
-    padding: 2px;
-    border: 1px dashed black;
-  }
-  
-  .calendar-box p {
-    margin: 0;
-    text-align: center;
+    color: #fff;
     font-size: 12px;
-  }
-  
+    text-align: center;
+    padding: 10px;
+    border: 1px dashed black;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.calendar-box:hover {
+    transform: scale(1.1);
+}
+
+.calendar-box.opened {
+    background-color: #228B22;
+    color: #fff;
+    border: 1px solid #006400;
+}
