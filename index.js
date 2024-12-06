@@ -23,7 +23,7 @@ function getRandomGift() {
 }
 
 // Create the calendar
-for (let i = 1; i <= 24; i++) {
+for (let i = 1; i <= 25; i++) {
   const box = document.createElement('li');
   box.classList.add('calendar-box');
   box.dataset.day = i;
